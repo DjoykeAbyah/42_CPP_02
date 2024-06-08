@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/08 16:03:35 by djoyke        ########   odam.nl          #
+#    Updated: 2024/06/08 21:23:29 by djoyke        ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME 		= Fix
 
 #compiler + flags
 CC			= c++
-CPPFLAGS	= -Wall -Wextra -g -fsanitize=address
+CPPFLAGS	= -Wall -Wextra -Werror
 
 #sources
 SRC 		= 	main.cpp		
@@ -56,5 +56,8 @@ fclean: clean
 	@ echo "${YELLOW}take a chillpill${DONE}"
 
 re:	fclean all
+
+fsan:
+	-g -fsanitize=address
 
 .PHONY: all clean fclean re
