@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:01 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/10 18:00:32 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/10 18:07:19 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ Fixed::Fixed(const Fixed& other): _fixedPointVal(other._fixedPointVal)
 	std::cout << "copy constructor called" << std::endl;
 }
 
-// you adjust already existing based on another existing object
 /**
  * @brief 	The copy assignment operator is a special operator 
  *          that assigns the values from one existing object to another existing object

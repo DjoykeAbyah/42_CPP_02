@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/10 18:07:56 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/10 11:06:15 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ clean:
 fclean: clean
 	@ rm -f $(NAME)
 	@ rm -f output.txt
-	@ echo "${YELLOW}Fix it Felix${DONE}"
+	@ echo "${YELLOW}take a chillpill${DONE}"
 
 re:	fclean all
 
