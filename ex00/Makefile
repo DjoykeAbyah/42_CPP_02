@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/08 21:23:29 by djoyke        ########   odam.nl          #
+#    Updated: 2024/06/10 11:06:15 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ CC			= c++
 CPPFLAGS	= -Wall -Wextra -Werror
 
 #sources
-SRC 		= 	main.cpp		
+SRC 		= 	main.cpp	\
+				Fixed.cpp	
 				
 #object files
 OBJDIR 		= obj
