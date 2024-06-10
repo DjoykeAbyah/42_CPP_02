@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/08 16:03:55 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/10 12:32:38 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/10 17:47:07 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int main( void ) 
 {
-	Fixed a;
-	Fixed b( a );
-	Fixed c;
-	c = b;
+	Fixed a; //calls default constructor
+	Fixed b( a ); //cals copy constructor
+	Fixed c;// calss default constructor
+	c = b;// calls copy assignment operator
 	
 	std::cout << a.getRawBits() << std::endl;
 	std::cout << b.getRawBits() << std::endl;
