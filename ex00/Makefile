@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/10 18:07:56 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/10 21:54:47 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,5 @@ fclean: clean
 
 re:	fclean all
 
-fsan:
+.PHONY: all clean fclean refsan:
 	-g -fsanitize=address
-
-.PHONY: all clean fclean re
