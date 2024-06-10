@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:01 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/10 21:49:35 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/10 21:52:24 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Fixed::Fixed(const int intNum)
 Fixed::Fixed(const float& floatNum)
 {
 	std::cout << "float constructor called" << std::endl;
-	this->_fixedPointVal = floatNum * (1<<_fractBitNum);// times the destination bit 2^8 = 256 yo whatever
+	this->_fixedPointVal = floatNum * (1<<_fractBitNum);// times the destination bit = 1 * (2^8) or 256
 }
 
 Fixed::~Fixed()
