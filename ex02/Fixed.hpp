@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:04 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/10 21:44:07 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/10 22:55:56 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,17 @@ class Fixed
 		Fixed(const float& floatNum);
 		Fixed(const Fixed& other);
 		Fixed& operator=(const Fixed& other);
+		Fixed& operator>(const Fixed& other);
+		Fixed& operator<(const Fixed& other);
+		Fixed& operator>=(const Fixed& other);
+		Fixed& operator<=(const Fixed& other);
+		Fixed& operator==(const Fixed& other);
+		Fixed& operator!=(const Fixed& other);
+		Fixed& operator+(const Fixed& other);
+		Fixed& operator-(const Fixed& other);
+		Fixed& operator*(const Fixed& other);
+		Fixed& operator/(const Fixed& other);
+		Fixed& operator++(const Fixed& other);
 		~Fixed();
 
 		int getRawBits(void) const;
