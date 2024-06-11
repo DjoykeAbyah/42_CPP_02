@@ -6,11 +6,12 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:04 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/10 17:49:39 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/11 19:22:29 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef FIXED_H
+# define FIXED_H
 
 #include <iostream>
 
@@ -29,3 +30,5 @@ class Fixed
 		int getRawBits(void) const;
 		void setRawBits(int const raw);
 };
+
+#endif

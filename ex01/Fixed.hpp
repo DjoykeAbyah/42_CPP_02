@@ -6,11 +6,12 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:04 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/10 21:44:07 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/11 19:21:46 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
+#ifndef FIXED_H
+# define FIXED_H
 
 #include <iostream>
 #include <cmath>
@@ -36,3 +37,5 @@ class Fixed
 };
 
 std::ostream & operator<<(std::ostream & stream, const Fixed& other);
+
+#endif

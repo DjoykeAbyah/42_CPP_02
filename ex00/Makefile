@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/10 21:54:47 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/11 19:17:58 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME 		= Fix
 
 #compiler + flags
 CC			= c++
-CPPFLAGS	= -Wall -Wextra -Werror
+CPPFLAGS	= -Wall -Wextra -Werror -g -fsanitize=address
 
 #sources
 SRC 		= 	main.cpp	\
@@ -58,5 +58,4 @@ fclean: clean
 
 re:	fclean all
 
-.PHONY: all clean fclean refsan:
-	-g -fsanitize=address
+.PHONY: all clean fclean refsan

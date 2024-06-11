@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/10 21:54:39 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/11 19:19:09 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME 		= Fix
 
 #compiler + flags
 CC			= c++
-CPPFLAGS	= -Wall -Wextra -Werror
+CPPFLAGS	= -Wall -Wextra -Werror -g -fsanitize=address
 
 #sources
 SRC 		= 	main.cpp	\
