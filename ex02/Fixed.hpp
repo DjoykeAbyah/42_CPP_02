@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/10 11:05:04 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/11 17:13:50 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/11 17:58:46 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,24 +41,24 @@ class Fixed
 		Fixed& operator=(const Fixed& other);
 		
 		//comparison operator overloaders returning boolean result
-		bool operator>(const Fixed& other);
-		bool operator<(const Fixed& other);
-		bool operator>=(const Fixed& other);
-		bool operator<=(const Fixed& other);
-		bool operator==(const Fixed& other);
-		bool operator!=(const Fixed& other);
-
-		//arithmetic operator overloaders
-		Fixed operator+(const Fixed& other);
+		bool operator>(const Fixed& other) const; 
+		bool operator<(const Fixed& other) const;
+		bool operator>=(const Fixed& other) const;
+		bool operator<=(const Fixed& other) const;
+		bool operator==(const Fixed& other) const;
+		bool operator!=(const Fixed& other) const;
+		
+	//arithmetic operator overloaders
+		Fixed operator+(const Fixed& other); 
 		Fixed operator-(const Fixed& other);
-		Fixed operator*(const Fixed& other);
+		Fixed operator*(const Fixed& other); 
 		Fixed operator/(const Fixed& other);
 		
 		//increment operator overloader
-		Fixed& operator++();
-		Fixed operator++(int);
-		Fixed &operator--();
-		Fixed operator--(int);
+		Fixed &operator++();		//pre-increment
+		Fixed operator++(int);		//post-increment
+		Fixed &operator--();		//pre-decrement
+		Fixed operator--(int);		//post-decrement
 
 		static Fixed& min(Fixed& fixedPoint1, Fixed& fixedPoint2);
 		static const Fixed& min(const Fixed& fixedPoint1, const Fixed& fixedPoint2);
